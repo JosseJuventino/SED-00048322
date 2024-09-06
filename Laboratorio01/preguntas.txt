@@ -1,0 +1,5 @@
+- En que consiste el ciclo de vida del desarrollo de software seguro
+Son practicas o puntos importantes que se deben hacer para garantizar que un software sea seguro, consiste en planear, diseñar, desarrollar, testear y laza
+
+
+00048322@uca.edu.sv
