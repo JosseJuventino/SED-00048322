@@ -1,0 +1,38 @@
+    1  git clone git@github.com:JosseJuventino/SED-00048322.git
+    2  git clone https://github.com/JosseJuventino/SED-00048322.git
+    3  ls
+    4  cd SED-00048322/
+    5  sudo apt-get install gnupg
+    6  gpg --full-generate-key
+    7  gpg --output my_revocation_certificate.asc --gen-revoke B761E02CC0BD3349FB292EB459C0F5BCFD4B5097
+    8  gpg --list-keys
+    9  gpg --output doc.gpg --export B761E02CC0BD3349FB292EB459C0F5BCFD4B5097
+   10  gpg --armor --output doc.asc --export B761E02CC0BD3349FB292EB459C0F5BCFD4B5097
+   11  ls
+   12  gpg --export-secret-keys --armor B761E02CC0BD3349FB292EB459C0F5BCFD4B5097 > ./my-priv-gpg-key-asc
+   13  ls
+   14  cd ..
+   15  ls
+   16  git clone https://github.com/Pyload901/llaves.git
+   17  ls
+   18  cd SED-00048322/
+   19  gpg --import .
+   20  gpg --import ../llaves/davidKey
+   21  gpg --list-keys
+   22  gpg --edit-key 00060021@uca.edu.sv
+   23  gpg --output doc.gpg --symmetric doc
+   24  ls
+   25  gpg --output doc.gpg --symmetric doc
+   26  ls
+   27  gpg --output doc.asc --symmetric doc
+   28  ls
+   29  history > history.txt
+   30  ls
+   31  cat history.txt 
+   32  gpg --output history.txt.gpg --symmetric history.txt
+   33  cat history.txt.gpg
+   34  cat history.txt.gpg --armor
+   35* cat history.txt.gpg
+   36* 
+   37  gpg --output doc.gpg --encrypt --recipient 00060021@uca.edu.sv doc
+   38  history > historyPublicKey
